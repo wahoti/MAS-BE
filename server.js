@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 // Define a basic route
 app.get("/test", (req, res) => {
   console.log("GOT A TEST CALL");
-  res.send("HELLO TEST");
+  res.send({ msg: "HELLO TEST" });
 });
 
 // Start the server
